@@ -69,7 +69,7 @@ try {
 
       rooms.set(room, settings);
 
-      // This will ensure that the room is closed shortly after the game has ended.
+      // This will ensure that the room is closed shortly after the game has ended
       setInterval(() => {
         io.socketsLeave(room);
         rooms.delete(room);
